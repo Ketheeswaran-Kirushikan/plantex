@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ecfeff;
+    height: fit-content;
+}
+
+.nightModeContainer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    margin-top: 10px;
+    z-index: 999;
+    border-radius: 50%;
+    
+}
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}.custom-toggler {
+    font-size:30px; 
+}
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+.background-custom {
+    background-color:#ecfccb;
+}
+.Text{
+    color: #000000;
+}
+.sectionOneButton{
+    background-color: rgb(160,224,111);
+}
+.night-mode .navbar-scroll .nav-link:hover,
+.night-mode .navbar-scroll .navbar-toggler-icon:hover,
+.night-mode .navbar-scroll .navbar-brand:hover,
+.night-mode .navbar-scrolled .nav-link:hover,
+.night-mode .navbar-scrolled .navbar-toggler-icon:hover,
+.night-mode .navbar-scrolled .navbar-brand:hover {
+    color: green !important;
+}
+.night-mode .fontColor:hover  {
+    color: green;
+}
+.night-mode .navbar-scroll,
+.night-mode .navbar-scrolled {
+    background-color:rgb(20,25,25);
+}
+.night-mode .nightModeContainer {
+    color: #030303;
+}
+.night-mode .nightColor{
+    background-color: #000000;
+}
+.night-mode .navbar{
+    background-color: rgb(20,25,25);
+}
+
+.night-mode .fontColor{
+    color:#ffffff
+}
+.night-mode .logoName{
+    color:#ffffff;
+}
+
+.hidden{
+    display: none;
+}
+.night-mode .background-custom{
+    background-color: rgb(20,25,25);
+}
+.night-mode .Text{
+    color: #ffffff;
+}
+.night-mode .sectionOneButton{
+    background-color: rgb(160,224,111);
+}
+
+.night-mode .colorMoon{
+    color: white;
+}
+
+.night-mode #slider img {
+    filter: drop-shadow(0 0 20px rgba(243, 243, 243, 0.198));
+}
+
+.night-mode .navbar-scroll .nav-link :hover {
+    color: green;
+}
+
+@media (max-width: 991.98px) {
+    .sectionOne .col-lg-6.mb-4 {
+        text-align: left ;
+    }
+    #slider img { 
+        margin-top:0px;
+        height:300px !important;
+        width: auto !important;
+    }
+    .main {
+        text-align: center;
+        margin-top: 200px;
+    }
+    .main .Text h2 {
+        font-size: 50px !important;
+    }
+    .main .Text h1 {
+        font-size: 70px !important;
+    }
+    .main .Text p {
+        font-size: 20px !important;
+    }
+    .main .Text .sectionOneButton {
+        font-size: 20px !important;
+        width: 200px !important;
+    }
+    #slider {
+        margin-bottom: 600px !important;
+        padding: 0px;
+        display: none;
+    }
+    .button1 {
+        margin-bottom: 20px;
+    }
+    .sectionTwo{
+        padding-top: 200px;
+    }
+}
+
+#slider {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 500px;
+    width: auto;
+}
+
+#slider img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    height: 500px;
+    width: auto;
+    filter: drop-shadow(0 0 20px rgba(68, 113, 8, 0.428));
+    transition: transform 0.3s;
+}
+#slider img:hover {
+    transform: scale(1.05);
+}
+
+
+#slider img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.sectionThree .button1{
+    background-color: transparent;
+    border:1px solid  rgb(53, 95, 53);
+}
+.sectionThree.button1:hover {
+        background-color: #0f4c0c91;
+    }
+
+    .card {
+        border: 1px solid #000000;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        transition: transform 0.3s;
+        background-color: transparent;
+      }
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+
+      .star-rating {
+        color: #FFD700;
+      }
+
+      .night-mode .card:hover{
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .night-mode .card{
+        border: 1px solid #ecfeff;
+    }
+
+    
+    .fa-plus,
+        .fa-xmark {
+            cursor: pointer;
+        }
+    
+        .faq-container{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .faq{
+            background-color: white;
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+        
+        .faq.active {
+            background-color: #072801;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px
+            6px rgba(0, 0, 0, 0.1);
+            color: #fafafa;
+        }
+        
+        
+        .faq.active::before{
+            color: #1f4e50;
+            top: -10px;
+            left: -30px;
+            transform: rotateY(180deg);
+        }
+        
+        .faq-title{
+            margin: 0 35px 0 0;
+        }
+        
+        .faq-text{
+            display: none;
+            margin: 30px 0 0;
+            text-align: justify;
+        }
+        
+        .faq.active .faq-text{
+            display: block;
+        }
+        
+        .faq-toggle{
+            background-color: transparent;
+            border-radius: 50%;
+            border: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            padding: 0;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .faq-toggle:focus{
+            outline: none;
+        }
+        
+        .faq-toggle .fa-times {
+            display: none;
+        }
+        
+        .faq.active .faq-toggle .fa-times {
+            display: block;
+            color: white;
+        }
+        
+        .faq.active .faq-toggle .fa-plus{
+            display: none;
+        }
+       

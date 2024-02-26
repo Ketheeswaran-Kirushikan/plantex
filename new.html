@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/df0ff7b9a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="new.css">
+    <script src="new.js" defer></script>
+    <script src="js/addons/rating.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span><i class="fas fa-leaf" style="color: rgb(53, 95, 53); font-size: 2rem;"></i></span>
+                    <span class="logoName">PLANTEX</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupp200px" aria-controls="navbarSupp200px" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars fontColor"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupp200px">
+                    <ul class="navbar-nav ms-auto" style="font-size: 20px;">
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link fontColor" href="#">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link fontColor" href="#">About</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link fontColor" href="#">Products</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link fontColor" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link fontColor" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item nightModeContainer text-center" style="margin-right: 20px;">
+                            <div>
+                                <i class="fas fa-sun hidden colorMoon" id="sunIcon" onclick="toggleNightMode()"></i>
+                                <i class="fas fa-moon colorMoon" id="moonIcon" onclick="toggleNightMode()"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section style="height: 100vh; display: flex; align-items: center; justify-content: start;"
+            class="background-custom first">
+            <div class="container">
+                <div class="row gy-4 gx-lg-5 align-items-center main">
+                    <div class="col-md-6 text-left mb-2 mb-md-0">
+                        <div class="carousel-text background-custom Text">
+                            <h2 style="font-size: 3.5vw;">65% OFF</h2>
+                            <h1 style="font-size: 6vw; font-weight: 900;">NEW PLANT</h1>
+                            <p style="font-size: 1.5vw;">Pronia, With 100% Natural, Organic & Plant Shop</p>
+                            <button type="button" class="btn btn-success rounded-pill mt-3 sectionOneButton"
+                                style="border-style: none; height: 7vh; width: 18vw; font-size: 1.5vw;">Discover
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-md-flex background-custom"
+                        style="border-style: none; justify-content: center;" id="slider">
+                        <figure>
+                            <img src="./resources/1.png" class="active" alt="">
+                            <img src="./resources/2.png" alt="">
+                            <img src="./resources/3.png" alt="">
+                            <img src="./resources/4.png" alt="" style="margin-left: 100px; margin-right: auto;">
+                            <img src="./resources/succulent-plant-potted1.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="background-custom sectionTwo">
+            <div class="container">
+                <div class="row gy-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+                        <img src="./resources/img/about.png" alt="" class="img-fluid mb-3" style="max-width: 100%;">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="mb-4 background-custom Text" style="font-size: 36px; font-weight: 900;">
+                            Who we really are & <br> why choose us
+                        </h2>
+
+                        <p class="mb-4 background-custom Text" style="font-size: 18px;">
+                            We have over 4000+ unbiased reviews and our customers trust our plant process and delivery
+                            service every time
+                        </p>
+
+                        <div class="mb-4 background-custom Text">
+                            <p style="font-size: 18px;" class="mb-3">
+                                <i class="fa-solid fa-square-check"
+                                    style="color: rgb(53, 95, 53); font-size: 18px; margin-right: 10px;"></i>
+                                We always deliver on time.
+                            </p>
+                            <p style="font-size: 18px;" class="mb-3">
+                                <i class="fa-solid fa-square-check"
+                                    style="color: rgb(53, 95, 53); font-size: 18px; margin-right: 10px;"></i>
+                                We give you guides to protect and care for your plants.
+                            </p>
+                            <p style="font-size: 18px;" class="mb-3">
+                                <i class="fa-solid fa-square-check"
+                                    style="color: rgb(53, 95, 53); font-size: 18px; margin-right: 10px;"></i>
+                                We always come over for a check-up after sale.
+                            </p>
+                            <p style="font-size: 18px;" class="mb-3">
+                                <i class="fa-solid fa-square-check"
+                                    style="color: rgb(53, 95, 53); font-size: 18px; margin-right: 10px;"></i>
+                                100% money back guaranteed.
+                            </p>
+                        </div>
+
+                        <a href="#"
+                            style="font-size: 18px;text-decoration: none;color: rgb(53, 95, 53);display: block;">
+                            Shop Now <i class="fa-solid fa-arrow-right fa-rotate-by"
+                                style="--fa-rotate-angle: 60deg;color: rgb(53, 95, 53); font-size: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center container-fluid py-5 background-custom Text sectionThree">
+            <h1 class="mt-4 mb-5">Our products</h1>
+            <div class="container mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary Text btn-lg btn-block button1 sectionThree"
+                            id="featured">Featured</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-secondary btn-lg btn-block Text button1 sectionThree"
+                            id="sellers">Best Sellers</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success btn-lg btn-block Text button1 sectionThree"
+                            id="latest">Latest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="background-custom" id="productOne">
+            <div class="container text-center">
+                <section>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product1.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product2.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">American Margold</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$15.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product3.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Bleeding Heart</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$30.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product4.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Bloody Cranesbill</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product1.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Butterfly Weed</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$65.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product2.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Common Yarrow</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$15.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product3.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Doublefile Viburnum</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$35.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product4.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Feather Reed Grass</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$20.00</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="background-custom" id="productTwo" style="display: none;">
+            <div class="container text-center">
+                <section>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product1.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product2.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product3.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product4.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product1.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product2.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="background-custom" id="productThree" style="display: none;">
+            <div class="container text-center">
+                <section>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product1.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product2.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product3.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product1.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product2.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 mb-4">
+                            <div class="card">
+                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                    <img src="./resources/img/product3.png" style="height: 150px; width:100px;" />
+                                    <a href="#!">
+                                        <div class="hover-overlay">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="" class="text-reset" style="text-decoration: none;">
+                                        <h5 class="card-title mb-3 Text">Black Eyed Susan</h5>
+                                    </a>
+                                    <p style="color: rgba(111, 179, 11, 0.998);">$25.45</p>
+                                    </a>
+                                    <div class="small-ratings star-rating">
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star rating-color"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="background-custom">
+            <div class="container" style="padding-top: 100px;">
+                <h1 class="Text text-center" style="margin-bottom:50px;font-weight: bolder;">Some Common Questions were often Asked</h1>
+                <div class="faq-container row">
+                    <div class="col-md-6">
+                        <div class="faq">
+                            <h4 class="faq-title">
+                                My flowers are falling of or dying?
+                            </h4>
+                            <p class="faq-text">
+                                Lorem ipsum dolor,
+                                sit amet consectetur adipisicing elit. Sit excepturi fugiat at quo quod enim
+                                laboriosam, molestiae aperiam hic officia, maxime quasi maiores harum commodi
+                                neque repellat? Sint, temporibus exercitationem! non nihil amet voluptas dolorem
+                            </p>
+                            <button class="faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="faq">
+                            <h4 class="faq-title">
+                                My flowers are falling of or dying?
+                            </h4>
+                            <p class="faq-text">
+                                Lorem ipsum dolor,
+                                sit amet consectetur adipisicing elit. Sit excepturi fugiat at quo quod enim
+                                laboriosam, molestiae aperiam hic officia, maxime quasi maiores harum commodi
+                                neque repellat? Sint, temporibus exercitationem! non nihil amet voluptas dolorem
+                            </p>
+                            <button class="faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="faq">
+                            <h4 class="faq-title">
+                                My flowers are falling of or dying?
+                            </h4>
+                            <p class="faq-text">
+                                Lorem ipsum dolor,
+                                sit amet consectetur adipisicing elit. Sit excepturi fugiat at quo quod enim
+                                laboriosam, molestiae aperiam hic officia, maxime quasi maiores harum commodi
+                                neque repellat? Sint, temporibus exercitationem! non nihil amet voluptas dolorem
+                            </p>
+                            <button class="faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="faq">
+                            <h4 class="faq-title">
+                                My flowers are falling of or dying?
+                            </h4>
+                            <p class="faq-text">
+                                Lorem ipsum dolor,
+                                sit amet consectetur adipisicing elit. Sit excepturi fugiat at quo quod enim
+                                laboriosam, molestiae aperiam hic officia, maxime quasi maiores harum commodi
+                                neque repellat? Sint, temporibus exercitationem! non nihil amet voluptas dolorem
+                            </p>
+                            <button class="faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="faq">
+                            <h4 class="faq-title">
+                                My flowers are falling of or dying?
+                            </h4>
+                            <p class="faq-text">
+                                Lorem ipsum dolor,
+                                sit amet consectetur adipisicing elit. Sit excepturi fugiat at quo quod enim
+                                laboriosam, molestiae aperiam hic officia, maxime quasi maiores harum commodi
+                                neque repellat? Sint, temporibus exercitationem! non nihil amet voluptas dolorem
+                            </p>
+                            <button class="faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="faq">
+                            <h4 class="faq-title">
+                                My flowers are falling of or dying?
+                            </h4>
+                            <p class="faq-text">
+                                Lorem ipsum dolor,
+                                sit amet consectetur adipisicing elit. Sit excepturi fugiat at quo quod enim
+                                laboriosam, molestiae aperiam hic officia, maxime quasi maiores harum commodi
+                                neque repellat? Sint, temporibus exercitationem! non nihil amet voluptas dolorem
+                            </p>
+                            <button class="faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+

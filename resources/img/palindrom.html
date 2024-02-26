@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <label> please input your word: </label>
+    <input type="text" name="" id="userInput"/><br><br>
+    <button id="check">Submit</button>
+    <h1> This is <span id="outPut"></span></h1>
+
+    <script>
+     var buttonCheck = document.getElementById("check");
+        var outPutText = document.getElementById("outPut");
+
+        const palindromCheck = () => {
+            var array = [];
+            var userInputTextGet = document.getElementById("userInput").value;
+            var userInputText=userInputTextGet.toLowerCase();
+            for (i = userInputText.length - 1; i >= 0; i--) {
+                const char = userInputText.charAt(i);
+                array.push(char);
+            }
+            var secondArray = array.join("").toLowerCase();
+
+            if(userInputText===secondArray){
+                outPutText.innerHTML="Palindrom Text";
+            }
+            else{
+                outPutText.innerHTML="Not a Palindrom Text";
+
+            }
+        }
+
+        buttonCheck.addEventListener("click", palindromCheck);
+
+
+    </script>
+</body>
+</html>
